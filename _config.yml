@@ -11,7 +11,7 @@ paginate_path:  news/page:num
 name:           International Conference on Simulated Evolution and Learning
 short_name:     SEAL
 description:    Simulated Evolution and Learning
-url:            http://www.seal2017.com
+url:            https://hughwen.github.io/seal2017/
 
 permalink:      /:categories/:year/:month/:day/:title.html
 
