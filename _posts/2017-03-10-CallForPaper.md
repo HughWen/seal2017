@@ -144,7 +144,7 @@ Prospective authors are invited to submit their original unpublished work to SEA
        Computational Intelligence.
     </div>
     <div class="col-md-6">
-        <img src="/img/springer.jpg" style="width:70%; height:50% ">
+        <img src="img/springer.jpg" style="width:70%; height:50% ">
     </div>
 </div>
 
