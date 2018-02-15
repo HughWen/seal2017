@@ -1,0 +1,54 @@
+<nav class="navbar navbar-default" role="navigation" id="main-nav">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".top-nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <a class="" href="/">
+        <img src="/img/sustc_cat3.png" id="logo" alt="Logo" width="150" height="150">
+    </a>
+
+    <div id="main-nav-container" class="collapse navbar-collapse top-nav-collapse">
+        <ul class="nav pull-left navbar-nav main-nav-links inline-list">
+            <li><a href="/">Homepage</a></li>
+            <li {% if page.nav==
+            "Submission" %} class="active" | {% endif %} ><a href="/Submission.html">Submission</a></li>
+            <li><a href="/schedule/2017.html">Schedule</a></li>
+            <!-- <li {% if page.nav == "schedule" %} class="active" | {% endif %} ><a href="/schedule/{{ site.custom.year }}.html">Schedule</a></li> -->
+            <li {% if page.nav==
+            "Special Sessions" %} class="active" | {% endif %} ><a href="/SpecialSessions.html">Special
+            Sessions</a></li>
+            <li {% if page.nav==
+            "Eic Forum" %} class="active" | {% endif %} ><a href="/Forum.html">EiC Forum</a></li>
+            <li><a href="/Registration.html">Registration</a></li>
+        </ul>
+
+        <ul class="nav pull-right navbar-nav main-nav-links inline-list">
+
+            <li {% if page.nav==
+            "" %} class="active" | {% endif %} ><a href="/speakers.html" style="padding: 15px 0px;">Keynote
+            Speakers</a></li>
+            <li {% if page.nav==
+            "Tutorial" %} class="active" | {% endif %} ><a href="/Tutorial.html">Tutorial</a></li>
+            <li {% if page.nav==
+            "Committee" %} class="active" | {% endif %} ><a href="/Committee.html">Committee</a></li>
+            <li {% if page.nav==
+            "Visa Information" %} class="active" | {% endif %} ><a href="/visa.html">Visa Information</a></li>
+            <li {% if page.nav==
+            "Workshop" %} class="active" | {% endif %} ><a href="workshop.html">Workshop</a></li>
+            <li {% if page.nav==
+            "venue" %} class="active" | {% endif %} ><a href="/venue.html" style="padding: 15px 0px;">Venue,
+            Accommodation and Transportation</a></li>
+
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+
+<div id="date_ribbon" class="ribbon">
+    <span class="ribbon-content">The 11th International Conference on Simulated Evolution and Learning</br></span>
+
+    <span class="ribbon-content">November 10-13, 2017, Shenzhen, China</span>
+</div>

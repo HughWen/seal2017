@@ -1,0 +1,52 @@
+---
+layout: default
+
+levels:
+  platinum: Platinum
+  gold: Gold
+  silver: Silver
+  bronze: Bronze
+  thanks: Special Thanks To
+---
+
+<div class="col-md-12">
+  <div class="hero-unit">
+    <h1>SeaGL {{ page.year}} Sponsors</h1>
+
+    <p class="lead text-center">
+      Our community sponsors are the lifeblood of SeaGL and we can't thank them enough.
+      <br class="hidden-xs hidden-sm" />
+      Their contributions will have a real and lasting effect in the FLOSS community. Thank you all.
+      <br>To become one, take a look at our <a href="{{ site.custom.url.prospectus }}">Exhibitor/Sponsor Prospectus</a>. Or email us at {{ site.custom.a.email.sponsor }} to discuss opportunities.</br>
+    </p>
+  </div>
+
+  {% for level in layout.levels %}
+    <div class="row {{ level[0] }}">
+      <h2>{{ level[1] }}</h2>
+
+      {% for sponsor in site.data.sponsors %}
+        {% assign sorted_years = sponsor.sponsorships | sort %}
+        {% for year in sorted_years %}
+          {% if year[0] == page.year and year[1] == level[0] %}
+            <div class="col-md-6">
+              <h3>
+                <a href="{{ sponsor.url }}">
+                  {% if sponsor.logo.banner != "missing" %}
+                    <img class="logo" src="{{ sponsor.logo.banner }}" alt="{{ sponsor.name }}">
+                  {% elsif sponsor.logo.square != "missing" %}
+                    <img class="logo" src="{{ sponsor.logo.square }}" alt="{{ sponsor.name }}">
+                  {% else %}
+                    <div class="name">{{ sponsor.name }}</div>
+                  {% endif %}
+                </a>
+              </h3>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+
+    <hr>
+  {% endfor %}
+</div>

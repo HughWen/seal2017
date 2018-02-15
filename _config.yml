@@ -1,0 +1,58 @@
+safe:           true
+lsi:            false
+timezone:       America/Los_Angeles
+markdown:       kramdown
+highlighter:    rouge
+gems:           [jekyll-paginate]
+
+paginate:       10
+paginate_path:  news/page:num
+
+name:           International Conference on Simulated Evolution and Learning
+short_name:     SEAL
+description:    Simulated Evolution and Learning
+url:            http://www.seal2017.com
+
+permalink:      /:categories/:year/:month/:day/:title.html
+
+custom:
+    year:                   2017
+    dates:                  November 10-13
+    location:               Shenzhen, China
+    url:
+        irc:
+            network:        https://freenode.net/kb/answer/chat
+            channel:        https://webchat.freenode.net?randomnick=1&channels=%23seagl
+        mailing_list:
+            seagl_announce: https://groups.google.com/forum/#!forum/seagl_announce
+            seagl_organize: https://groups.google.com/forum/#!forum/seagl_organize
+        location:           https://seattlecentral.edu
+        prospectus:         /sponsors/SeaGL_Exhibitor_Sponsor_Prospectus_2016.pdf
+    a:
+        irc:
+            network:        <a href="https://freenode.net/kb/answer/chat">Freenode</a>
+            channel:        <a href="https://webchat.freenode.net?randomnick=1&channels=%23seagl">#seagl</a>
+        email:
+            award:          <a href="mailto:&#097;&#119;&#097;&#114;&#100;&#064;&#115;&#101;&#097;&#103;&#108;&#046;&#111;&#114;&#103;">&#097;&#119;&#097;&#114;&#100;&#064;&#115;&#101;&#097;&#103;&#108;&#046;&#111;&#114;&#103;</a>
+            participate:    <a href="mailto:%70%61%72%74%69%63%69%70%61%74%65%40%73%65%61%67%6c%2e%6f%72%67">&#x0070;&#x0061;&#x0072;&#x0074;&#x0069;&#x0063;&#x0069;&#x0070;&#x0061;&#x0074;&#x0065;&#x0040;&#x0073;&#x0065;&#x0061;&#x0067;&#x006c;&#x002e;&#x006f;&#x0072;&#x0067;</a>
+            press:          <a href="mailto:%70%72%65%73%73%40%73%65%61%67%6c%2e%6f%72%67">&#x0070;&#x0072;&#x0065;&#x0073;&#x0073;&#x0040;&#x0073;&#x0065;&#x0061;&#x0067;&#x006c;&#x002e;&#x006f;&#x0072;&#x0067;</a>
+            sponsor:        <a href="mailto:%73%70%6f%6e%73%6f%72%40%73%65%61%67%6c%2e%6f%72%67">&#x0073;&#x0070;&#x006f;&#x006e;&#x0073;&#x006f;&#x0072;&#x0040;&#x0073;&#x0065;&#x0061;&#x0067;&#x006c;&#x002e;&#x006f;&#x0072;&#x0067;</a>
+            staff:          <a href="mailto:%73%74%61%66%66%40%73%65%61%67%6c%2e%6f%72%67">&#x0073;&#x0074;&#x0061;&#x0066;&#x0066;&#x0040;&#x0073;&#x0065;&#x0061;&#x0067;&#x006c;&#x002e;&#x006f;&#x0072;&#x0067;</a>
+        social:
+            twitter:        <a href="https://twitter.com/seagl">Twitter</a>
+            facebook:       <a href="https://www.facebook.com/SeattleGnuLinuxConference">Facebook</a>
+            googleplus:     <a href="https://plus.google.com/+SeaglOrg/">Google+</a>
+            youtube:        <a href="https://www.youtube.com/user/SeaglOrg">YouTube</a>
+        mailing_list:
+            seagl_announce: <a href="https://groups.google.com/forum/#!forum/seagl_announce">announcement mailing list</a>
+            seagl_organize: <a href="https://groups.google.com/forum/#!forum/seagl_organize">seagl_organize</a>
+        location:           <a href="http://sustc.edu.cn/en/">Southern University of Science and Technology</a>
+        donate:             <a href="https://www.coinbase.com/checkouts/0369f11bd23988462937832f2bbff8d5">Donate Bitcoins</a>
+    piwik:
+        domain:             metrics.seagl.org
+        siteid:             13
+        tracked_domains:
+          - "*.seagl.org"
+sass:
+    sass_dir: _sass
+    style: compressed

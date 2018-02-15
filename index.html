@@ -1,0 +1,108 @@
+---
+layout: default
+nav: home
+body_id: home
+description:
+---
+
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Attention: </h2>
+            The SEAL2017 Proceedings is now available online at <a href="https://link.springer.com/book/10.1007%2F978-3-319-68759-9">https://link.springer.com/book/10.1007%2F978-3-319-68759-9</a>, which is free to access for a period of 4 weeks.
+        </div>
+        <div class="col-md-8">
+            {% for post in site.categories.news limit:2 %}
+            <h2>{{ post.title }}<br></h2>
+                {{ post.content }}
+                <hr>
+                {% endfor %}
+        </div>
+        <div class="col-md-4">
+            <h2>About</h2>
+            <p>
+                The {{ site.custom.year }} International Conference on Simulated Evolution and Learning is scheduled
+                for <strong>{{ site.custom.dates }}</strong>
+                at <a href="http://sustc.edu.cn/en/">Southern University of Science and Technology</a> (<a
+                    href="https://www.google.com.hk/maps/place/South+University+of+Science+and+Technology+of+China/@22.5929973,113.9827091,15.25z/data=!4m5!3m4!1s0x0:0x78b8602ec96ff57b!8m2!3d22.5943476!4d113.9981157?hl=en"
+                    target="_blank">Google Map</a> | <a href="http://f.amap.com/14fpn_06D2tor" target="_blank">Gaode
+                Maps</a>).
+            </p>
+            <p>
+                Evolution and learning are two fundamental forms of adaptation. SEAL 2017 is the eleventh conference in
+                the highly successful series that aims at exploring these two forms of adaptation and their roles and
+                interactions in adaptive systems. Cross-fertilization between evolutionary learning and other machine
+                learning approaches, such as neural network learning, reinforcement learning, decision tree learning,
+                fuzzy system learning, etc., will be strongly encouraged by the conference. The other major theme of the
+                conference is optimization by evolutionary approaches or hybrid evolutionary approaches.
+
+
+            </p>
+            <h2>Important Dates</h2>
+            <p>
+                Paper submission </br> <strong><s>20 May 2017</s></strong> <strong><span style="color: red;">10 June 2017</span></strong>
+            </p>
+            <p>
+                Acceptance notification </br><strong>15 July 2017</strong>
+            </p>
+            <p>
+                Camera ready due </br><strong>15 August 2017</strong>
+            </p>
+            <p>
+                Conference sessions </br><strong>11-13 November 2017</strong>
+            </p>
+            <!--<p>-->
+            <!--<strong>Attendee Registration will not require the use of non-free software.</strong>-->
+            <!--</p>-->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Contact</h2>
+            <p>
+            <h3>Email</h3>
+            <p>
+                hughwen@outlook.com<br/>
+
+            </p>
+            </p>
+        </div><!--/span-->
+        <!--<div class="col-md-4">-->
+        <!--<h2>Exhibitors</h2>-->
+        <!--<p>-->
+        <!--We will have a small hall available for exhibitors.  Free tables will be-->
+        <!--available for free/libre/open-source software/hardware and non-profit-->
+        <!--organizations, and there are several sponsorship levels for everyone-->
+        <!--else.  If your organization would like an exhibit table at SeaGL, please-->
+        <!--send an email to {{ site.custom.a.email.sponsor }} for our vendor-->
+        <!--prospectus.-->
+        <!--</p>-->
+
+        <!--<p>-->
+        <!--Exhibitor space is limited, please contact us right away if you are-->
+        <!--interested in a table.-->
+        <!--</p>-->
+        <!--</div>&lt;!&ndash;/span&ndash;&gt;-->
+        <!--<div class="col-md-4">-->
+        <!--<h2>Sponsorship</h2>-->
+        <!--<p>-->
+        <!--We can't do what we need to do without the support of the community. If-->
+        <!--you would like to offer financial support but don't need an exhibit-->
+        <!--table, please send an email to {{ site.custom.a.email.sponsor }}.-->
+
+        <!--<h2>Donate now</h2>-->
+        <!--<p>-->
+        <!--<a href="http://www.socallinuxexpo.org/">Our fiscal sponsor,-->
+        <!--<strong>Linux Expo of Southern California, Inc.</strong></a>, has-->
+        <!--partnered with Coinbase so you can donate Bitcoin to support-->
+        <!--SeaGL. Thank you for your support!-->
+        <!--</p>-->
+        <!--<p>-->
+        <!--{{ site.custom.a.donate }}-->
+        <!--</p>-->
+        <!--</p>-->
+        <!--</div>&lt;!&ndash;/span&ndash;&gt;-->
+    </div>
+</div>
+</div>
